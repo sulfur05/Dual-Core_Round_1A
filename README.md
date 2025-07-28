@@ -1,8 +1,5 @@
-Sure, Shreya. Here's your final README.md file for Round 1A, fully aligned with Adobe's submission requirements and including a clean, concise, and compliant approach section:
 
-📁 README.md
-
-````markdown
+```
 # 📄 Adobe India Hackathon 2025 – Round 1A: Document Outline Extractor
 
 ---
