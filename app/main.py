@@ -3,7 +3,7 @@ import fitz  # PyMuPDF
 from extractor import extract_headings
 from json_writer import save_json
 
-# Use absolute paths for input and output directories inside the container
+
 INPUT_DIR = "/app/input"
 OUTPUT_DIR = "/app/output"
 
@@ -17,7 +17,6 @@ def process_pdf(file_path, output_path):
     save_json(output_data, output_path)
 
 def main():
-    # Ensure input and output directories exist
     if not os.path.exists(INPUT_DIR):
         raise FileNotFoundError(f"Input directory not found: {INPUT_DIR}")
     if not os.path.exists(OUTPUT_DIR):
