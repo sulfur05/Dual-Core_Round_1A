@@ -1,73 +1,45 @@
+Sure, Shreya. Here's your final README.md file for Round 1A, fully aligned with Adobe's submission requirements and including a clean, concise, and compliant approach section:
+
+📁 README.md
+
+````markdown
 # 📄 Adobe India Hackathon 2025 – Round 1A: Document Outline Extractor
 
 ---
 
-## 🧠 Challenge Theme: *Connecting the Dots Through Docs*
+## ✅ Approach
 
-Welcome to the “Connecting the Dots” Challenge!
+The solution extracts a structured outline from PDFs by analyzing each page’s layout and text organization. It identifies the document’s title and classifies headings into hierarchical levels (H1, H2, H3) using content patterns and structural cues. Repetitive or non-informative elements are filtered out to ensure the output remains clean and relevant.
 
-> **Rethink Reading. Rediscover Knowledge.**  
-> Your mission is to turn static PDFs into intelligent, interactive experiences.  
-> In **Round 1A**, we focus on understanding structure — the foundation of all semantic tasks.
+This process is designed to generalize across different document types and styles without relying on hardcoded rules, producing a consistent and readable outline in JSON format.
 
 ---
 
-## 🚀 Round 1A Goal
+## 🧠 Libraries Used
 
-You're handed a PDF — but instead of simply reading it, you're tasked with making sense of it like a machine would. Your job is to extract a structured outline of the document including:
+- PyMuPDF (fitz) – for PDF parsing and layout extraction
+- scikit-learn – used internally for grouping logic
+- re – for pattern-based filtering and cleanup
+- os, json – for file I/O and output formatting
 
-- 📌 **Title**
-- 📂 **Headings** – H1, H2, H3 with page numbers
-
-This forms the **semantic foundation** for future rounds like recommendation and insight generation.
-
----
-
-## 📁 Folder Structure
-
-```text
-ROUND1a/
-├── app/
-│   ├── __init__.py
-│   ├── clustering.py
-│   ├── extractor.py
-│   ├── json_writer.py
-│   ├── main.py
-│   ├── utils.py
-│   ├── input/
-│   │   └── notes-50-100.pdf
-│   └── output/
-│       └── notes-50-100.json  ← (Generated after running)
-├── Dockerfile
-├── requirements.txt
-└── README.md
-```
+All dependencies are listed in requirements.txt and are installed inside the Docker container.
 
 ---
 
-## ⚙ How It Works
+## 🐳 How to Build and Run (Documentation Purpose)
 
-The pipeline performs the following:
+These commands are for documentation purposes only. The solution will be evaluated using the official execution commands provided in the challenge.
 
-1. **Loads PDFs** from `/app/input`
-2. **Extracts:**
-   - 📌 Title using font heuristics
-   - 📂 Headings (H1/H2/H3) using font size, layout, and position clustering
-3. **Writes structured output** to `/app/output` in valid JSON format
-
----
-
-## 🐳 How to Run with Docker
-
-### 🔨 Build the Docker Image
+### Build the Docker Image
 
 ```bash
 docker build --platform linux/amd64 -t dualcore:extractor1a .
-```
+````
 
-### ▶ Run the Container
+### Run the Docker Container
 
-#### If using **PowerShell** (Windows):
+Using PowerShell (Windows):
+
 ```powershell
 docker run --rm `
   -v "${PWD}\input:/app/input" `
@@ -76,7 +48,8 @@ docker run --rm `
   dualcore:extractor1a
 ```
 
-#### If using **bash** (Linux/macOS/Git Bash):
+Using Bash (Linux/macOS):
+
 ```bash
 docker run --rm \
   -v "$(pwd)/input:/app/input" \
@@ -85,86 +58,11 @@ docker run --rm \
   dualcore:extractor1a
 ```
 
-> 📝 All PDFs in `/app/input` will be processed and corresponding `.json` files generated in `/app/output`.
+Each PDF in /app/input will be processed, and a corresponding JSON file will be generated in /app/output.
 
 ---
 
-## 📤 Output Format
-
-```json
-{
-  "title": "Understanding AI",
-  "outline": [
-    { "level": "H1", "text": "Introduction", "page": 1 },
-    { "level": "H2", "text": "What is AI?", "page": 2 },
-    { "level": "H3", "text": "History of AI", "page": 3 }
-  ]
-}
 ```
 
----
-
-## 📦 Libraries & Tools Used
-
-- `PyMuPDF (fitz)` – PDF parsing
-- `os` & `json` – Filesystem and serialization
-- `scikit-learn` – Clustering logic for heading detection
-
----
-
-## ✅ What You Need to Build
-
-Your container must:
-
-- Accept a **PDF file up to 50 pages**
-- Extract:
-  - `title`
-  - Headings `H1`, `H2`, `H3` (with level and page number)
-- Output a **valid JSON file** per input file
-
----
-
-## ❗ Constraints
-
-| Constraint            | Requirement                             |
-|-----------------------|------------------------------------------|
-| Execution time        | ⏱ ≤ 10 seconds for a 50-page PDF         |
-| Model size            | 📦 ≤ 200MB (if used)                      |
-| Network               | 🚫 No internet access allowed             |
-| Platform              | 🖥 Must run on CPU (amd64 architecture)   |
-
----
-
-## 🧪 Evaluation Criteria
-
-| Metric                             | Max Points |
-|------------------------------------|------------|
-| Heading Detection Accuracy         | 25         |
-| Performance (Time & Size)          | 10         |
-| Bonus: Multilingual Handling       | 10         |
-| **Total**                          | **45**     |
-
----
-
-## 📌 Submission Checklist
-
-✔ Working **Dockerfile** in root directory  
-✔ All dependencies installed inside container  
-✔ **README.md** that includes:
-- 📘 Approach overview
-- 🧠 Models/Libraries used
-- 🐳 How to build and run the solution
-
-> ✅ **Pro Tip**: Avoid hardcoding or API calls. Generalize the logic. Keep the repo private until told otherwise.
-
----
-
-## 💡 Pro Tips
-
-- Don’t rely **only** on font size for heading levels — use position and spacing too!
-- Test on **both simple and complex** PDFs
-- Make your code **modular** — reuse it in Round 1B
-- Avoid hardcoding text or file-specific rules
-
----
----
+Let me know if you'd like this saved to a file or bundled in a ZIP with your code. You're now fully ready for submission ✅.
+```
