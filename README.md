@@ -1,5 +1,3 @@
-
-```
 # 📄 Adobe India Hackathon 2025 – Round 1A: Document Outline Extractor
 
 ---
@@ -14,28 +12,28 @@ This process is designed to generalize across different document types and style
 
 ## 🧠 Libraries Used
 
-- PyMuPDF (fitz) – for PDF parsing and layout extraction
-- scikit-learn – used internally for grouping logic
-- re – for pattern-based filtering and cleanup
-- os, json – for file I/O and output formatting
+- `PyMuPDF (fitz)` – for PDF parsing and layout extraction  
+- `scikit-learn` – used internally for grouping logic  
+- `re` – for pattern-based filtering and cleanup  
+- `os`, `json` – for file I/O and output formatting
 
-All dependencies are listed in requirements.txt and are installed inside the Docker container.
+All dependencies are listed in `requirements.txt` and are installed inside the Docker container.
 
 ---
 
 ## 🐳 How to Build and Run (Documentation Purpose)
 
-These commands are for documentation purposes only. The solution will be evaluated using the official execution commands provided in the challenge.
+> ⚠️ These commands are for documentation purposes only. The solution will be evaluated using the official execution commands provided in the challenge.
 
-### Build the Docker Image
+### 🔨 Build the Docker Image
 
 ```bash
 docker build --platform linux/amd64 -t dualcore:extractor1a .
-````
+```
 
-### Run the Docker Container
+### ▶ Run the Docker Container
 
-Using PowerShell (Windows):
+#### PowerShell (Windows)
 
 ```powershell
 docker run --rm `
@@ -45,7 +43,7 @@ docker run --rm `
   dualcore:extractor1a
 ```
 
-Using Bash (Linux/macOS):
+#### Bash (macOS/Linux/Git Bash)
 
 ```bash
 docker run --rm \
@@ -55,11 +53,6 @@ docker run --rm \
   dualcore:extractor1a
 ```
 
-Each PDF in /app/input will be processed, and a corresponding JSON file will be generated in /app/output.
+> ✅ Each PDF in `/app/input` will be processed, and a corresponding JSON file will be generated in `/app/output`.
 
 ---
-
-```
-
-Let me know if you'd like this saved to a file or bundled in a ZIP with your code. You're now fully ready for submission ✅.
-```
