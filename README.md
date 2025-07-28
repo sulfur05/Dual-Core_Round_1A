@@ -62,7 +62,7 @@ docker build --platform linux/amd64 -t pdf-outline:shreya .
 docker run --rm \
   -v "$(pwd)/app/input:/app/app/input" \
   -v "$(pwd)/app/output:/app/app/output" \
-  --network none pdf-outline:shreya
+  --network none pdf-outline:pdfextractor
 ```
 
 > 📝 This will generate `.json` output in the `/app/output` directory.
