@@ -1,0 +1,250 @@
+{
+  "title": "2.3.1",
+  "outline": [
+    {
+      "level": "H2",
+      "text": "2.3.1 Variables and predicates",
+      "page": 0
+    },
+    {
+      "level": "H2",
+      "text": "2.3.2 Quantifiers",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "2.3.2.1 Universal quantifier",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "2.3.2.2 Existential quantifier",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "2.3.2.3 Negation and quantifiers",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "2.3.2.4 Restricting the scope of a quantifier",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "2.3.2.5 Nested quantifiers",
+      "page": 3
+    },
+    {
+      "level": "H2",
+      "text": "2.3.2.6 Examples",
+      "page": 5
+    },
+    {
+      "level": "H2",
+      "text": "2.3.3 Functions",
+      "page": 6
+    },
+    {
+      "level": "H2",
+      "text": "2.3.4 Equality",
+      "page": 7
+    },
+    {
+      "level": "H2",
+      "text": "2.3.4.1 Uniqueness",
+      "page": 7
+    },
+    {
+      "level": "H2",
+      "text": "2.3.5 Models",
+      "page": 8
+    },
+    {
+      "level": "H2",
+      "text": "2.3.5.1 Examples",
+      "page": 8
+    },
+    {
+      "level": "H2",
+      "text": "2.4 Proofs",
+      "page": 9
+    },
+    {
+      "level": "H2",
+      "text": "2.4.1 Inference Rules",
+      "page": 10
+    },
+    {
+      "level": "H2",
+      "text": "2.4.2.1 The Deduction Theorem",
+      "page": 13
+    },
+    {
+      "level": "H2",
+      "text": "2.4.2.2 Natural deduction",
+      "page": 14
+    },
+    {
+      "level": "H2",
+      "text": "2.4.3 Inference rules for equality",
+      "page": 14
+    },
+    {
+      "level": "H2",
+      "text": "2.4.4 Inference rules for quantified statements",
+      "page": 16
+    },
+    {
+      "level": "H2",
+      "text": "2.5 Proof techniques",
+      "page": 17
+    },
+    {
+      "level": "H2",
+      "text": "45 Strategy",
+      "page": 19
+    },
+    {
+      "level": "H2",
+      "text": "46 Construction",
+      "page": 20
+    },
+    {
+      "level": "H2",
+      "text": "47 Case analysis",
+      "page": 21
+    },
+    {
+      "level": "H2",
+      "text": "2.6 Examples of proofs",
+      "page": 21
+    },
+    {
+      "level": "H2",
+      "text": "2.6.1 Axioms for even numbers",
+      "page": 21
+    },
+    {
+      "level": "H2",
+      "text": "2.6.2 A theorem and its proof",
+      "page": 22
+    },
+    {
+      "level": "H2",
+      "text": "2.6.3 A more general theorem",
+      "page": 24
+    },
+    {
+      "level": "H2",
+      "text": "3.1 Naive set theory",
+      "page": 26
+    },
+    {
+      "level": "H2",
+      "text": "3.2 Operations on sets",
+      "page": 28
+    },
+    {
+      "level": "H2",
+      "text": "3.3 Proving things about sets",
+      "page": 29
+    },
+    {
+      "level": "H2",
+      "text": "3.4 Axiomatic set theory",
+      "page": 31
+    },
+    {
+      "level": "H2",
+      "text": "3.5.1 Examples of functions",
+      "page": 35
+    },
+    {
+      "level": "H2",
+      "text": "3.5.2 Sequences",
+      "page": 35
+    },
+    {
+      "level": "H2",
+      "text": "3.5.4 Composition of functions",
+      "page": 36
+    },
+    {
+      "level": "H2",
+      "text": "3.5.5 Functions with special properties",
+      "page": 36
+    },
+    {
+      "level": "H2",
+      "text": "3.5.5.1 Surjections",
+      "page": 37
+    },
+    {
+      "level": "H2",
+      "text": "3.5.5.2 Injections",
+      "page": 37
+    },
+    {
+      "level": "H2",
+      "text": "3.5.5.3 Bijections",
+      "page": 37
+    },
+    {
+      "level": "H2",
+      "text": "3.5.5.4 Bijections and counting",
+      "page": 37
+    },
+    {
+      "level": "H2",
+      "text": "3.6 Constructing the universe",
+      "page": 38
+    },
+    {
+      "level": "H2",
+      "text": "3.7 Sizes and arithmetic",
+      "page": 40
+    },
+    {
+      "level": "H2",
+      "text": "3.7.1 Infinite sets",
+      "page": 40
+    },
+    {
+      "level": "H2",
+      "text": "3.7.2 Countable sets",
+      "page": 42
+    },
+    {
+      "level": "H2",
+      "text": "3.7.3 Uncountable sets",
+      "page": 42
+    },
+    {
+      "level": "H2",
+      "text": "3.8 Further reading",
+      "page": 43
+    },
+    {
+      "level": "H2",
+      "text": "4.1 Field axioms",
+      "page": 45
+    },
+    {
+      "level": "H2",
+      "text": "4.1.1 Axioms for addition",
+      "page": 45
+    },
+    {
+      "level": "H2",
+      "text": "4.1.2 Axioms for multiplication",
+      "page": 46
+    },
+    {
+      "level": "H2",
+      "text": "4.2 Order axioms",
+      "page": 50
+    }
+  ]
+}
