@@ -3,8 +3,9 @@ import fitz  # PyMuPDF
 from extractor import extract_headings
 from json_writer import save_json
 
-INPUT_DIR = "/app/app/input"
-OUTPUT_DIR = "/app/app/output"
+# Use absolute paths for input and output directories inside the container
+INPUT_DIR = "/app/input"
+OUTPUT_DIR = "/app/output"
 
 def process_pdf(file_path, output_path):
     doc = fitz.open(file_path)
@@ -14,7 +15,6 @@ def process_pdf(file_path, output_path):
         "outline": outline
     }
     save_json(output_data, output_path)
-
 
 def main():
     # Ensure input and output directories exist
